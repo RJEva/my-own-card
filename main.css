@@ -1,3 +1,5 @@
+/* CSS reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,100 @@
   font-size: 100%;
 }
 
+/* többi */
 
-body, html {
-  background-color: #E8FDFE;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Elegant_Background-3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: monospace;
 }
 
+.profile-card {
+  background-color: hsla(60, 100%, 50%, .4);
+  height: 500px;
+  width: 600px;
+  max-width: calc(100vw - 10px);
+  background-color: hsla(0, 0%, 100%, .4);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  position: relative;
+}
+
+img {
+  width: auto;
+  height: 500px;
+}
+
+.content {
+  position: absolute;
+  top: 5%;
+  margin-right: 210px;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 45px;
+  padding: 3%;
+  color: rgba(189, 154, 154, 0.9);
+  text-shadow: 2px 2px 4px rgb(94, 77, 77);
+}
+
+.profession {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(129, 105, 105, 0.9);
+  text-shadow: 1px 1px 4px rgba(94, 77, 77, 0.6);
+}
+
+
+.about {
+  margin: 3%;
+  padding: 6%;
+  font-size: 20px;
+  line-height: 1.5em;
+  background-color: rgba(189, 154, 154, 0.6);
+  color: rgba(94, 77, 77);
+}
+
+.about:hover {
+  background-color: rgba(189, 154, 154);
+}
+
+.contact {
+  font-size: 13px;
+  padding-left: 3%;
+  color: rgba(74, 57, 57);
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+a {
+  padding: 1%;
+}
+
+a:link {
+  color: rgba(94, 77, 77);
+  font-size: 15px;
+  transition: size 2s;
+}
+
+a:hover {
+  color: rgba(60, 60, 60);
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
