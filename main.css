@@ -16,7 +16,7 @@ body {
   height: 100vh;
   background: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Elegant_Background-3.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 .profile-card {
@@ -33,12 +33,13 @@ body {
 img {
   width: auto;
   height: 500px;
+  max-width: calc(100vw - 10px);
 }
 
 .content {
   position: absolute;
   top: 5%;
-  margin-right: 210px;
+  margin-right: 230px;
 }
 
 .name {
@@ -51,11 +52,10 @@ img {
 
 .profession {
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   color: rgba(129, 105, 105, 0.9);
   text-shadow: 1px 1px 4px rgba(94, 77, 77, 0.6);
 }
-
 
 .about {
   margin: 3%;
@@ -68,33 +68,42 @@ img {
 
 .about:hover {
   background-color: rgba(189, 154, 154);
+  box-shadow: hsla(0, 0%, 0%, .6) 10px 10px 80px;
+  transition: 0.5s;
+}
+
+.links {
+  padding-left: 3%;
 }
 
 .contact {
-  font-size: 13px;
+  font-size: 15px;
   padding-left: 3%;
   color: rgba(74, 57, 57);
 }
 
 ul {
   list-style-type: none;
+}
 
+li {
+  display: inline;
+  margin: 5px;
+}
+
+i {
+  padding: 2%;
 }
 
 a {
-  padding: 1%;
-}
-
-a:link {
   color: rgba(94, 77, 77);
   font-size: 15px;
-  transition: size 2s;
 }
 
 a:hover {
   color: rgba(60, 60, 60);
-  font-size: 20px;
   transition: 0.5s;
+  text-shadow: 2px 2px 4px rgb(94, 77, 77, 0.6);
 }
 
 .right {
